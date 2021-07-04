@@ -1,0 +1,31 @@
+<div *ngIf="products?.length >= 0" class="cards__area">
+  <div *ngFor="let data of products" class="card">
+    <div class="product__img">
+      <img src={{data.image}} alt="">
+    </div>
+    <div class="product__info">
+      <div class="product__description">
+        <p>{{data.title}}</p>
+      </div>
+      <div class="product__price">
+        <div class="product__price__avista">
+          <span class="price__region">R$</span>
+          <span class="price__value">{{data.price}}</span>
+          <span routerLink="/product-detail" class="product__detail">+ detalhes</span>
+        </div>
+        <span class="parcelamento__price">à vista no boleto ou PIX</span>
+      </div>
+      <div class="product__price__conditions">
+        <div class="product__price__frow">
+          <span class="parcelamento__conditions-x">12x</span>
+          <span class="parcelamento__conditions-price">{{calculatePrice(data.price)}}</span>
+        </div>
+        <span class="parcelamento__price">s/ juros no cartão</span>
+      </div>
+    </div>
+    <div class="buy__space">
+      <a href="#" class="carrinho__btn">Adicionar ao carrinho</a>
+      <a href="#" class="buy__btn">Comprar</a>
+    </div>
+  </div>
+</div>

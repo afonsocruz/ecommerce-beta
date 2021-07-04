@@ -1,0 +1,130 @@
+.cards__area {
+  width: 1180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 36px 0px;
+}
+
+.cards__area .card {
+  height: 480px;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  padding: 8px 16px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.product__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  position: relative;
+}
+
+.product__img::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  opacity: .2;
+  background-color: #000;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+}
+.product__img img {
+  width: 100px;
+}
+
+.product__info {
+  margin: 16px 0px;
+}
+
+.product__info .product__description p {
+  font-size: 1.4rem;
+  height: 120px;
+}
+
+.product__price {
+  border-radius: 16px;
+}
+
+.product__price__avista .price__region {
+  font-size: 2.4rem;
+}
+
+.product__price__avista .price__value {
+  font-size: 2.8rem;
+  margin-left: 4px;
+  font-weight: 700;
+}
+
+.product__detail {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: rgb(71, 20, 255);
+  color: #FFF;
+  padding: 4px 8px;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  cursor: pointer;
+}
+
+.product__price__frow {
+  margin-top: 6px;
+}
+
+.product__price__frow .parcelamento__conditions-x {
+  background-color: rgb(71, 20, 255);
+  -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  color: #FFF;
+  font-size: 1.4rem;
+  padding: 4px 8px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  font-weight: bold;
+}
+
+.product__price__frow .parcelamento__conditions-price {
+  background-color: rgb(101, 58, 255);
+  -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  color: #FFF;
+  font-size: 1.4rem;
+  padding: 4px 8px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.product__price__conditions .parcelamento__price {
+  display: block;
+  margin-top: 4px;
+}
+
+.buy__space
+.buy__btn,
+.carrinho__btn {
+  background-color: rgb(71, 20, 255);
+  color: #FFF;
+  font-size: 1.2rem;
+  padding: 6px 8px;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+  box-shadow: 2px 2px 9px 1px rgba(0,0,0,0.51);
+}
+
+.buy__btn {
+  margin-left: 6px;
+}
+
+.buy__btn:hover,
+.carrinho__btn:hover {
+  opacity: 0.9;
+}
+
+

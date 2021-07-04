@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: #000;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
